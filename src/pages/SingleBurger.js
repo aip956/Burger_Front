@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 // Destructure the props needed to get our burger, including router prop match
 
@@ -23,11 +24,11 @@ const SingleBurger = ( { burgers, match, edit, deleteBurger }) => {
         <h2>Veggie: {burger.veggie}</h2>
         <h2>Eater ID: {burger.user_id}</h2>
 
-        <button onClick={(event) => edit(burger)}>Edit</button>
-        <button onClick={(event) => deleteBurger(burger)}>Delete</button>
-      <Link to="/">
-        <button>Go Back</button>
-      </Link>
+        <Button onClick={(event) => edit(burger)}>Edit</Button>
+        <Button onClick={(event) => deleteBurger(burger)}>Delete</Button>
+        <Link to="/"><Button>Back to Burger List</Button></Link>
+
+
 
     </div>
         )

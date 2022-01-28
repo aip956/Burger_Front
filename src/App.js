@@ -6,6 +6,7 @@ import Buttons from "./components/Buttons";
 // Burger from https://www.youtube.com/watch?v=GGkBwpxV7AI
 // Burger Menu imports
 import Navbar from "./components/Nav/Navbar";
+import Button from 'react-bootstrap/Button';
 
 // Import React and hooks
 import React , { useState, useEffect } from "react";
@@ -19,13 +20,14 @@ function App(props) {
   const h1 = {
     textAlign: "center",
     margin: "10px",
-  };
+  }
 
-  const button = {
-    backgroundColor: "navy",
-    display: "block",
-    margin: "auto",
-  };
+
+  // const button = {
+  //   backgroundColor: "navy",
+  //   display: "block",
+  //   margin: "auto",
+  // };
 
   //  State & Other Variables
 
@@ -110,7 +112,9 @@ useEffect(() => {
     <div>
       <Navbar />
       <h1 style={h1}>My Burger List</h1>
-      <Link to="/new"><Buttons style={button}>Create New Burger</Buttons></Link>
+
+      <Link to="/new"><Button>Make A Burger!</Button></Link>
+  
       <Switch>
         <Route
           exact 
@@ -136,7 +140,7 @@ useEffect(() => {
             initialBurger={nullBurger}
             handleSubmit={addBurgers}
             buttonLabel="Make a burger!"
-
+      
 
             />
           )}
@@ -149,6 +153,7 @@ useEffect(() => {
             initialBurger={targetBurger}
             handleSubmit={updateBurger}
             buttonLabel="Update a burger!"
+           
             />
           )}
         />
