@@ -2,12 +2,17 @@
 import AllBurgers from "./pages/AllBurgers";
 import SingleBurger from "./pages/SingleBurger";
 import Form from "./pages/Form";
+import Buttons from "./components/Buttons";
+// Burger from https://www.youtube.com/watch?v=GGkBwpxV7AI
+// Burger Menu imports
+import Navbar from "./components/Nav/Navbar";
 
 // Import React and hooks
 import React , { useState, useEffect } from "react";
 
 // Import components from React Router
 import { Route, Switch, Link } from "react-router-dom";
+
 
 function App(props) {
   // Styling 
@@ -103,8 +108,9 @@ useEffect(() => {
   // returned JSX
   return (
     <div>
+      <Navbar />
       <h1 style={h1}>My Burger List</h1>
-      <Link to="/new"><button style={button}>Create New Burger</button></Link>
+      <Link to="/new"><Buttons style={button}>Create New Burger</Buttons></Link>
       <Switch>
         <Route
           exact 
@@ -130,6 +136,8 @@ useEffect(() => {
             initialBurger={nullBurger}
             handleSubmit={addBurgers}
             buttonLabel="Make a burger!"
+
+
             />
           )}
         />
