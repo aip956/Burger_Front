@@ -1,6 +1,6 @@
 const buttonbox = {
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "space-around",
   }
 
   export default buttonbox

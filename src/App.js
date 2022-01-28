@@ -7,6 +7,7 @@ import Buttons from "./components/Buttons";
 // Burger Menu imports
 import Navbar from "./components/Nav/Navbar";
 import Button from 'react-bootstrap/Button';
+import buttonbox from "./components/button-box";
 
 // Import React and hooks
 import React , { useState, useEffect } from "react";
@@ -112,8 +113,9 @@ useEffect(() => {
     <div>
       <Navbar />
       <h1 style={h1}>My Burger List</h1>
-
+      <div style={buttonbox}>
       <Link to="/new"><Button>Make A Burger!</Button></Link>
+      </div>
   
       <Switch>
         <Route
