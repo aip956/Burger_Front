@@ -1,5 +1,6 @@
 // Import useState hook
 import React, { useState } from "react";
+import Card from "../components/Card";
 
 // Destructure out props, including router prop history
 const Form = ( { initialBurger, handleSubmit, buttonLabel, history} ) => {
@@ -24,9 +25,9 @@ const Form = ( { initialBurger, handleSubmit, buttonLabel, history} ) => {
         // push user back to main page
         history.push("/");
     };
-
 // Our Form, an input for the burger fields and submit button
     return (
+        <div className="d-flex justify-content-center">
         <form onSubmit={handleSubmission}>
             <label for="burger_name">Burger Name</label>
                 <input
@@ -52,6 +53,14 @@ const Form = ( { initialBurger, handleSubmit, buttonLabel, history} ) => {
                 defaultValue={formData.cheese}
                 name="cheese"
                 />
+            <label for="veggie">Veggie</label>
+            <input
+            type="text"
+            onChange={handleChange}
+            placeholder="veggie"
+            defaultValue={formData.veggie}
+            name="veggie"
+            />
             <label for="user_id">Eater ID</label>
                 <input
                 type="text"
@@ -60,9 +69,10 @@ const Form = ( { initialBurger, handleSubmit, buttonLabel, history} ) => {
                defaultValue={formData.user_id}
                name="user_id"
                />    
-            <input type="submit" value={buttonLabel} />
-            <button>Go Back to Burger List</button>
+            <input className="btn btn-dark m-5" type="submit" value={buttonLabel}  />
+            <button className="btn btn-dark m-5">Go Back to Burger List</button>
         </form>
+        </div>
     )
 };
 

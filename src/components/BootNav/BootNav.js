@@ -4,6 +4,7 @@ import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css';
 import './BootNav.css'
 import { Link } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
 
 
 const BootNav = () => {
@@ -23,7 +24,9 @@ const BootNav = () => {
               </li>
               <li className="nav-item">
 
-              <Link to="/new" className="nav-link">Build A Burger! </Link>
+              {/* <Link to="/new" className="nav-link">Build A Burger! </Link> */}
+
+              <Link to="/new"><Button className="btn btn-dark">Build a Burger!</Button></Link>
 
                
               </li>

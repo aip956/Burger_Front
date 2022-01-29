@@ -29,9 +29,9 @@ console.log(burger.burger_name)
         <h2>Eater ID: {burger.user_id}</h2>
 
 <div className="d-flex justify-content-evenly">
-        <Button onClick={(event) => edit(burger)}>Edit</Button>
-        <Button onClick={(event) => deleteBurger(burger)}>Delete</Button>
-        <Link to="/"><Button>Back to Burger List</Button></Link>
+        <Button className="btn btn-dark" onClick={(event) => edit(burger)}>Edit</Button>
+        <Button className="btn btn-dark"onClick={(event) => deleteBurger(burger)}>Delete</Button>
+        <Link to="/"><Button className="btn btn-dark">Back to Burger List</Button></Link>
 
      
       </div>
