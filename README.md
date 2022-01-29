@@ -11,35 +11,19 @@ New Tech: Bootstrap
 
 
 Backend
-
-
  Backend language: Ruby 3.0.3
-
-
  Postgres Database: Models "burger" and "user"
-
-
  Heroku backend deployment: https://burger-be.herokuapp.com/burgers/
-
-
  github backend: https://github.com/aip956/Burger_BE
 
+
 Frontend
-
-
  github frontend: https://github.com/aip956/Burger_Front
-
-
  Netlify frontend deployment: https://burgersite-frontend.netlify.app/
-
-
  Frontend in REACT
-
-
  Bootstrap styling
-
-
  Model "burger" has full CRUD
+
 
 Challenges
  Just scratched the surface of learning Bootstrap
