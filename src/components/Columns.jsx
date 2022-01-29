@@ -3,11 +3,11 @@ import 'bulma/css/bulma.min.css';
 const Columns = () => {
       return (
        
-<div class="columns is-mobile">
-  <div class="column"></div>
-  <div class="column"></div>
-  <div class="column"></div>
-  <div class="column"></div>
+<div className="columns is-mobile">
+  <div className="column"></div>
+  <div className="column"></div>
+  <div className="column"></div>
+  <div className="column"></div>
 </div>
 
 )

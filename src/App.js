@@ -2,7 +2,7 @@
 import AllBurgers from "./pages/AllBurgers";
 import SingleBurger from "./pages/SingleBurger";
 import Form from "./pages/Form";
-import Buttons from "./components/Buttons";
+
 // Burger from https://www.youtube.com/watch?v=GGkBwpxV7AI
 // Burger Menu imports
 import Navbar from "./components/Nav/Navbar";
@@ -18,11 +18,8 @@ import { Route, Switch, Link } from "react-router-dom";
 
 
 function App(props) {
-  // Styling 
-  const h1 = {
-    textAlign: "center",
-    margin: "10px",
-  }
+
+
 
 
   // const button = {
@@ -111,15 +108,18 @@ useEffect(() => {
 
   // returned JSX
   return (
+    <>
+    <BootNav />
     <div>
-      <BootNav />
-      <h1 style={h1}>My Burger List</h1>
+      
+
       <div style={buttonbox}>
-      <Link to="/new"><Button>Make A Burger!</Button></Link>
+      
       </div>
   
       <Switch>
         <Route
+
           exact 
           path="/"
           render={(routerProps) => <AllBurgers {...routerProps} burgers={burgers} />}
@@ -163,6 +163,7 @@ useEffect(() => {
          
       </Switch>
     </div>
+    </>
   );
 }
 

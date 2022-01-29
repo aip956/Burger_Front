@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
-import buttonbox from "../components/button-box";
+
 // Destructure the props needed to get our burger, including router prop match
 
 const SingleBurger = ( { burgers, match, edit, deleteBurger }) => {
     const id = parseInt(match.params.id);
     const burger = burgers.find((burger) => burger.id === id);
+    console.log(burgers.find((burger) => burger.id === id));
+console.log(burgers)
+console.log(burger)
+console.log(burger.burger_name)
 
     // Styles
     const div = {
@@ -23,14 +27,14 @@ const SingleBurger = ( { burgers, match, edit, deleteBurger }) => {
         <h2>Cheese: {burger.cheese}</h2>
         <h2>Veggie: {burger.veggie}</h2>
         <h2>Eater ID: {burger.user_id}</h2>
-        
-        <div style={buttonbox}>
+
+<div className="d-flex justify-content-evenly">
         <Button onClick={(event) => edit(burger)}>Edit</Button>
         <Button onClick={(event) => deleteBurger(burger)}>Delete</Button>
         <Link to="/"><Button>Back to Burger List</Button></Link>
-  </div>
 
-
+     
+      </div>
     </div>
         )
 };
