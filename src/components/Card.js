@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
+
 function Card (props) {
     let burger = props.burger
     return (
+        
         <div className="card">
+            <Link className="btn btn-primary btn-dark m-5" to={`/burger/${burger.id}`}>
         {/* <img className="card-img-top" src="..." alt="Card image cap"/> */}
             <div className="card-body">
                 <h5 className="card-title">{burger.burger_name}</h5>
@@ -13,13 +16,13 @@ function Card (props) {
            
             </div>
 
-            <Link className="btn btn-dark" to={`/burger/${burger.id}`}>
-          See Burger
-            </Link>
-
+     
+      
+            
+          </Link>
 
         </div>
-
+        
     );
 }
 
