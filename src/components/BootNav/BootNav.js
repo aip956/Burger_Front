@@ -43,7 +43,15 @@ const BootNav = () => {
   );
 }
 
-const AuthNav = () => null;
+const AuthNav = () => {
+const {isAuthenticated } = useAuth0();
+
+return (
+  <Nav className="justify-content-end">
+    {isAuthenticated ? <LogoutButton /> : <LoginButton />}
+  </Nav>
+); 
+};
 
 const NavBar = () => {
   return (

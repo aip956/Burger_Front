@@ -10,6 +10,7 @@ import Button from 'react-bootstrap/Button';
 import buttonbox from "./components/button-box";
 import BootNav from "./components/BootNav/BootNav";
 import NavBar from "./components/BootNav/BootNav";
+import { useAuth0 } from "@auth0/auth0-react";
 
 // Import React and hooks
 import React , { useState, useEffect } from "react";
@@ -20,7 +21,25 @@ import { Route, Switch, Link } from "react-router-dom";
 
 function App(props) {
 
+  // const { isLoading } = useAuth0();
 
+  // if (isLoading) {
+  //   return <Loading />;
+  // }
+
+  // return (
+  //   <div id="app" className="d-flex flex-column h-100">
+  //     <NavBar />
+  //     <div className="container flex-grow-1">
+  //       <Switch>
+  //         <Route path="/" exact component={Home} />
+  //         <Route path="/profile" component={Profile} />
+  //         <Route path="/external-api" component={ExternalApi} />
+  //       </Switch>
+  //     </div>
+  //     <Footer />
+  //   </div>
+  // );
 
 
   // const button = {
@@ -110,7 +129,7 @@ useEffect(() => {
   // returned JSX
   return (
     <>
-    <BootNav />
+    <NavBar />
     <div>
       
 
