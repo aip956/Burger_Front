@@ -20,26 +20,11 @@ import { Route, Switch, Link } from "react-router-dom";
 
 
 function App(props) {
+  const {isAuthenticated } = useAuth0();
+  const userAuthenticated = false;
+  
 
-  // const { isLoading } = useAuth0();
-
-  // if (isLoading) {
-  //   return <Loading />;
-  // }
-
-  // return (
-  //   <div id="app" className="d-flex flex-column h-100">
-  //     <NavBar />
-  //     <div className="container flex-grow-1">
-  //       <Switch>
-  //         <Route path="/" exact component={Home} />
-  //         <Route path="/profile" component={Profile} />
-  //         <Route path="/external-api" component={ExternalApi} />
-  //       </Switch>
-  //     </div>
-  //     <Footer />
-  //   </div>
-  // );
+ 
 
 
   // const button = {
@@ -129,7 +114,7 @@ useEffect(() => {
   // returned JSX
   return (
     <>
-    <NavBar />
+    <NavBar userAuthenticated={userAuthenticated} />
     <div>
       
 
