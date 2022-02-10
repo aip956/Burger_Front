@@ -9,6 +9,7 @@ import Navbar from "./components/Nav/Navbar";
 import Button from 'react-bootstrap/Button';
 import buttonbox from "./components/button-box";
 import BootNav from "./components/BootNav/BootNav";
+import NavBar from "./components/BootNav/BootNav";
 
 // Import React and hooks
 import React , { useState, useEffect } from "react";
@@ -127,7 +128,7 @@ useEffect(() => {
         <Route
           path="/burger/:id"
           render={(routerProps) => (
-            <SingleBurger
+            <SingleBurger 
               {...routerProps}
               burgers={burgers}
               edit={getTargetBurger}
