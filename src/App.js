@@ -11,6 +11,8 @@ import buttonbox from "./components/button-box";
 import BootNav from "./components/BootNav/BootNav";
 import NavBar from "./components/BootNav/BootNav";
 import { useAuth0 } from "@auth0/auth0-react";
+import PrivateRoute from "./components/private-route";
+
 
 // Import React and hooks
 import React , { useState, useEffect } from "react";
@@ -140,7 +142,7 @@ useEffect(() => {
             />
           )}
         />
-        <Route
+        <PrivateRoute
           path="/new"
           render={(routerProps) => (
             <Form 
@@ -153,7 +155,7 @@ useEffect(() => {
             />
           )}
         />
-        <Route
+        <PrivateRoute
           path="/edit"
           render={(routerProps) => (
             <Form 

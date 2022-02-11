@@ -23,6 +23,10 @@ Frontend
  Frontend in REACT
  Bootstrap styling
  Model "burger" has full CRUD
+ Authentication: https://www.youtube.com/watch?v=1rgeO_EbSGg, 
+ Auth Blog: https://auth0.com/blog/complete-guide-to-react-user-authentication/
+ Auth code: https://github.com/auth0-blog/auth0-react-sdk-video
+ 
 
 
 Challenges
