@@ -28,6 +28,4 @@ const Profile = () => {
   );
 };
 
-export default withAuthenticationRequired(Profile, {
-    onRedirecting: () => <Loading />,
-  });
+export default Profile
