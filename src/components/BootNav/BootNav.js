@@ -19,32 +19,33 @@ import Loading from "../loading";
 
 const NavBar = () => {
 
-const {isAuthenticated, isLoading, user } = useAuth0();
-const userAuthenticated =  isAuthenticated ? true : false;
-if (isLoading) {
-  return <Loading />;
-}
+// const {isAuthenticated, isLoading, user } = useAuth0();
+// const userAuthenticated =  isAuthenticated ? true : false;
+// if (isLoading) {
+//   return <Loading />;
+// }
 
-const buttonMaster = ()=>{
-  if (isLoading){
-    return
-  }
-  if (userAuthenticated){
-    console.log(user)
-    return <LogoutButton />}
-  if(!userAuthenticated){
-    return <LoginButton />
-  }
-  else {
-      return
-  }
-}
+// const buttonMaster = ()=>{
+//   if (isLoading){
+//     return
+//   }
+//   if (userAuthenticated){
+//     console.log(user)
+//     return <LogoutButton />}
+//   if(!userAuthenticated){
+//     return <LoginButton />
+//   }
+//   else {
+//       return
+//   }
+// }
   return (
     <Navbar bg="light" expand="md">
       <Container>
         {/* <Navbar.Brand as={RouterNavLink} className="logo" to="/" /> */}
         
         <nav className="navbar navbar-expand-lg navbar-light bg-info">
+
       <h1 className="navbar-brand">Anthea's House of Burgers</h1>
       <div className="container-fluid">
         <button className="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,21 +67,35 @@ const buttonMaster = ()=>{
             <h1>{User.given_name}</h1>
           </li>
         
+
+        <li>
+
+        </li>
         </ul>
   
       </div>
       </div>
+
+
+
     </nav>  
 
-    <div className="justify-content-end">
+    {/* <div className="justify-content-end">
     {buttonMaster()}
-    </div>
+    </div> */}
 
       </Container>
     </Navbar>
   );
 };
 
+const AuthNav = () => {
+  const { isAuthenticated } = useAuth0();
+  return (
+  <Nav className="justify-content-end">
+    { isAuthenticated ? <LogoutButton /> : <LoginButton />}
+  </Nav>)
+}
 
 
 export default NavBar;

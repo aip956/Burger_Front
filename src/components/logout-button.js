@@ -12,8 +12,8 @@ const LogoutButton = () => {
           returnTo: window.location.origin,
         })
       }
-      id="qsLogoutBtn"
-      variant="danger"      
+      // id="qsLogoutBtn"
+      // variant="danger"      
     >
       Log Out
     </Button>

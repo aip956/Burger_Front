@@ -24,9 +24,11 @@ Frontend
  Bootstrap styling
  Model "burger" has full CRUD
  Authentication: https://www.youtube.com/watch?v=1rgeO_EbSGg, 
+ Part 2: https://www.youtube.com/watch?v=NuCZgR09csE&list=PLZ14qQz3cfJL6aoKZ_Ly7jiYrwi9ihviW&index=3
+ 
  Auth Blog: https://auth0.com/blog/complete-guide-to-react-user-authentication/
  Auth code: https://github.com/auth0-blog/auth0-react-sdk-video
- 
+
 
 
 Challenges
