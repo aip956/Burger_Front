@@ -5,7 +5,7 @@ import { Spinner } from "react-bootstrap";
 
 const Loading = () => (
   <div className="spinner-border" role="status">
-    <span class="sr-only">Loading</span>
+    {/* <span class="sr-only">Loading</span> */}
   </div>
 );
 

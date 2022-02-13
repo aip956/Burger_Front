@@ -19,26 +19,26 @@ import Loading from "../loading";
 
 const NavBar = () => {
 
-// const {isAuthenticated, isLoading, user } = useAuth0();
-// const userAuthenticated =  isAuthenticated ? true : false;
-// if (isLoading) {
-//   return <Loading />;
-// }
+const {isAuthenticated, isLoading, user } = useAuth0();
+const userAuthenticated =  isAuthenticated ? true : false;
+if (isLoading) {
+  return <Loading />;
+}
 
-// const buttonMaster = ()=>{
-//   if (isLoading){
-//     return
-//   }
-//   if (userAuthenticated){
-//     console.log(user)
-//     return <LogoutButton />}
-//   if(!userAuthenticated){
-//     return <LoginButton />
-//   }
-//   else {
-//       return
-//   }
-// }
+const buttonMaster = ()=>{
+  if (isLoading){
+    return
+  }
+  if (userAuthenticated){
+    console.log(user)
+    return <LogoutButton />}
+  if(!userAuthenticated){
+    return <LoginButton />
+  }
+  else {
+      return
+  }
+}
   return (
     <Navbar bg="light" expand="md">
       <Container>
@@ -46,11 +46,11 @@ const NavBar = () => {
         
         <nav className="navbar navbar-expand-lg navbar-light bg-info">
 
-      <h1 className="navbar-brand">Anthea's House of Burgers</h1>
-      <div className="container-fluid">
-        <button className="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-        </button>
+          <h1 className="navbar-brand">Anthea's House of Burgers</h1>
+        <div className="container-fluid">
+          <button className="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+          </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -80,9 +80,9 @@ const NavBar = () => {
 
     </nav>  
 
-    {/* <div className="justify-content-end">
+    <div className="justify-content-end">
     {buttonMaster()}
-    </div> */}
+    </div>
 
       </Container>
     </Navbar>
