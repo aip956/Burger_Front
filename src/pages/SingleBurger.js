@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import { withAuthenticationRequired } from "@auth0/auth0-react";
+import Loading from "../components/loading";
 
 // Destructure the props needed to get our burger, including router prop match
 
@@ -39,4 +41,7 @@ console.log(burger.burger_name)
         )
 };
 
-export default SingleBurger;
+
+export default withAuthenticationRequired(SingleBurger, {
+    onRedirecting: () => <Loading />,
+  });

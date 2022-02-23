@@ -2,8 +2,6 @@
     font-size: larger;
     font-style: bold;
     font-weight: 400;
-
-
   }
 
 .logo {
@@ -19,7 +17,6 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-
    }
 
  .bg-myRed{
