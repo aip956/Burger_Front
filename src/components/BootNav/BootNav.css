@@ -1,4 +1,27 @@
- 
+.navbar-brand {
+    font-size: larger;
+    font-style: bold;
+    font-weight: 400;
+
+
+  }
+
+.logo {
+     font-size: 1.5em;
+     font-style: bold;
+     font-weight: 700;
+     margin: 0;
+     margin-bottom: 10px;
+ } 
+
+.links {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+
+   }
+
  .bg-myRed{
      background-color:crimson,
  }
@@ -10,4 +33,11 @@
 
  .navbar-toggle .icon-bar {
     background-color: #fff;
+}
+
+a {
+    text-decoration: underline;
+    font-size: larger;
+    font-style: bold;
+    font-weight: 400;
 }

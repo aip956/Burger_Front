@@ -142,7 +142,7 @@ useEffect(() => {
             />
           )}
         />
-        <PrivateRoute
+        <Route
           path="/new"
           render={(routerProps) => (
             <Form 
@@ -155,7 +155,7 @@ useEffect(() => {
             />
           )}
         />
-        <PrivateRoute
+        <Route
           path="/edit"
           render={(routerProps) => (
             <Form 

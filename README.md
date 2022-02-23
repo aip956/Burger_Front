@@ -37,7 +37,13 @@ Challenges
  Original project was using FaunaDB, then pivoted to GraphQL (query language and backend) and Apollo (on the FE to fetch and modify the data). Kept getting close but earlier in the week did not have full CRUD, so pivoted to learning Bootstrap.
 
 
-Screenshots
-<img src="src/Screen Caps/Burger Index.png>
-<img src="src/Screen Caps/Burger Show.png>
-<img src="src/Screen Caps/Burger Edit.png>
+## Screenshots
+### Index Page
+<img src="src/ScreenCaps/BurgerIndex.png" style="width:50%">
+
+### Individual Show Page
+<img src="src/ScreenCaps/BurgerShow.png">
+
+### Individual Edit Page
+<img src="src/ScreenCaps/BurgerEdit.png">
+

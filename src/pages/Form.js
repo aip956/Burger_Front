@@ -1,6 +1,8 @@
 // Import useState hook
 import React, { useState } from "react";
 import Card from "../components/Card";
+import { withAuthenticationRequired } from "@auth0/auth0-react";
+import Loading from "../components/loading";
 
 // Destructure out props, including router prop history
 const Form = ( { initialBurger, handleSubmit, buttonLabel, history} ) => {
@@ -76,4 +78,6 @@ const Form = ( { initialBurger, handleSubmit, buttonLabel, history} ) => {
     )
 };
 
-export default Form;
+export default withAuthenticationRequired(Form, {
+        onRedirecting: () => <Loading />,
+      });
