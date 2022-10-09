@@ -5,7 +5,7 @@ import Form from "./pages/Form";
 
 // Burger from https://www.youtube.com/watch?v=GGkBwpxV7AI
 // Burger Menu imports
-import Navbar from "./components/Nav/Navbar";
+import Navbar from "../../../CapPractice/Other work/Nav/Navbar";
 import Button from 'react-bootstrap/Button';
 import buttonbox from "./components/button-box";
 import BootNav from "./components/BootNav/BootNav";
